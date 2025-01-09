@@ -8,7 +8,7 @@ el usuario
 var numero1 = parseInt(prompt("Introduce el Primer nuemro", 0));
 var numero2 = parseInt(prompt("Introduce el Segundo nuemro", 0));
 
-document.write("<h1>Los Numeros Impares de "+numero1+"hasta "+numero2+"son los siguientes: </h1>")
+document.write("<h1>Los Numeros Impares de "+numero1+" hasta "+numero2+" son los siguientes: </h1>")
 
 /*
 for (var i = numero1; i <= numero2; i++) {
@@ -23,6 +23,6 @@ for (var i = numero1; i <= numero2; i++) {
 while(numero1 < numero2){
     numero1++
     if(numero1%2 != 0){
-        document.write("El "+numero1+"Es Impar");
+        document.write("El "+numero1+" Es Impar </br>");
     }
 }
