@@ -5,6 +5,12 @@
 var  categorias = ['Accion', 'Terror', 'comedia'];
 var  Peliculas = ['IT eso', 'Tron el Legado', 'Saw X'];
 
+//sort: para ordenar el array
+//reverse: para darle la vuelta al array
+Peliculas.reverse();
+
+console.log(Peliculas);
+
 var cine = [categorias, Peliculas];
 
 //console.log(cine[0][1]);
@@ -36,7 +42,10 @@ if(indice > -1){
 //join: para convertir un array a texto
 var Peliculas_string = Peliculas.join();
 
-console.log(Peliculas_string);
+var cadena = "Texto1, Texto2, Texto2";
+var cadena_array = cadena.split(", ");
+
+console.log(cadena_array);
 
 //console.log(indice);
 

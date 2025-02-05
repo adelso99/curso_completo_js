@@ -23,11 +23,17 @@ if(elemento >= nombres.length){
 
 document.write("<h1>Lenguajes de Programacion de 2025</h1>")
 document.write("<ul>");
-
+/*
 lenguajes.forEach((elemento, indice)=>{
     //console.log(arreglo);
     document.write("<li>"+indice+" "+elemento+"</li>");
 });
+*/
+
+for(let lenguaje in lenguajes){
+    document.write("<li>"+lenguajes[lenguaje]+"</li>");
+}
+
 /*
 for(var i = 0; i < lenguajes.length; i++){
     document.write("<li>"+lenguajes[i]+"</li>");
@@ -41,3 +47,15 @@ for(var i = 0; i < lenguajes.length; i++){
 
 //document.write(lenguajes[1]);
 //document.write(lenguajes[2]);
+
+//BUSQUEDAS 
+// "find": sirve para buscar 
+//var busqueda = lenguajes.find(function(lenguaje){
+var precios = [10, 20, 50 ,80, 12];
+//var busqueda = lenguajes.find(lenguaje => lenguaje == "JS");
+
+//Comprobar el valor o precio con "some"
+var busqueda = precios.some(precio => precio > 80);
+
+
+console.log(busqueda);
