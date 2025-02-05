@@ -23,9 +23,17 @@ if(elemento >= nombres.length){
 
 document.write("<h1>Lenguajes de Programacion de 2025</h1>")
 document.write("<ul>");
+
+lenguajes.forEach((elemento, indice)=>{
+    //console.log(arreglo);
+    document.write("<li>"+indice+" "+elemento+"</li>");
+});
+/*
 for(var i = 0; i < lenguajes.length; i++){
     document.write("<li>"+lenguajes[i]+"</li>");
 }
+*/
+
     document.write("</ul>");
 
 
