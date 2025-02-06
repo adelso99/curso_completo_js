@@ -10,19 +10,29 @@
     que diga si lo encuentra y su indice
 */
 
+var numeros = new Array(6);
 
+for(var i = 0; i <= 5; i++){
+    numeros[i] = parseInt(prompt("Ingrese un numero: ", 0));
+
+}
+
+
+
+/*
 
 document.write("<h1>"+"Los Elementos del Array son los Siguintes"+"</h1>");
 document.write("<ul>");
 
 var elementos = [];
-/*
+
 do{
     elementos = parseInt(prompt("Introduce los Numeros del Array: "));
     elementos.push(elementos);
 
 }while(elementos != 6)
 */
+/*
 for(var i = 0; i < elementos.length; i++){
         elementos = parseInt(prompt("Introduce los Numeros del Array: "));
         document.write("<li>"+elementos[i]+"</li>");
@@ -32,6 +42,7 @@ document.write(elementos);
 
 
 document.write("</ul>");
+/*
 
 /*
 lenguajes.forEach((elemento, indice)=>{
