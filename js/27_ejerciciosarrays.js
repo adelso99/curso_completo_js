@@ -22,7 +22,7 @@ function mostrarArray(elementos, textoCustom = ""){
 }
 
 //1. Pedir los 6 numeros
-//tambieen se puede asi
+//tambieen se puede de esta forma
 //var numeros = new Array(6);
 var numeros = [];
 
@@ -34,7 +34,7 @@ for(var i = 0; i <= 5; i++){
 
 }
 
-// 2. Mostrar el Array por la consola y Pagina
+// 2. Mostrar el Array por la consola y tambien por Pagina
 //2.1 Por Consola
 console.log(numeros);
 
