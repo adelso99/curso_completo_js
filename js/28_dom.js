@@ -34,7 +34,7 @@ for(valor in todoslosdivs){
     var texto = document.createTextNode(todoslosdivs[valor].textContent);
     //append: significa que añade despues
     parrafo.append(texto);
-    seccion.prepend(parrafo);
+    seccion.append(parrafo);
         //prepend: significa añade antes
     }
 }
@@ -50,7 +50,8 @@ seccion.append(hr);
 
 
 //3.-- Conseguir elementos por su clase
+//3.-- Conseguir elementos por su clase
 
-console.log(caja);
+//console.log(caja);
 
 // Holi
