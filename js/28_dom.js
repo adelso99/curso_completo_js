@@ -52,6 +52,30 @@ seccion.append(hr);
 //3.-- Conseguir elementos por su clase
 //3.-- Conseguir elementos por su clase
 
+var divRojos = document.getElementsByClassName('rojo');
+var divAmarrillos = document.getElementsByClassName('amarillo');
+console.log(divAmarrillos[0].style.background = "Yellow");
+
+var div;
+for(var div in divRojos){
+    if(divRojos[div].className == "rojo"){
+    divRojos[div].style.background = "red";
+    }
+}
+
+//4. Query Selector. sirve para seleccionar un elemento
+var id = document.querySelector("#encabezado");
+console.log(id);
+
+var claseRojo = document.querySelector("div.rojo");
+console.log(claseRojo);
+
+var etiqueta = document.querySelector("div");
+console.log(etiqueta);
+
+
+//console.log(divRojos);
+
 //console.log(caja);
 
 // Holi
