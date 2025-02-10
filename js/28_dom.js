@@ -75,6 +75,9 @@ console.log(etiqueta);
 
 
 //console.log(divRojos);
+//console.log(divRojos);
+//console.log(divRojos);
+//console.log(divRojos);
 
 //console.log(caja);
 
