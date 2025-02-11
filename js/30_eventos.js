@@ -1,5 +1,6 @@
 'use strict'
 //Evento load: para que no exita conflicto en el llamdo del script de html
+                        // o tambien asi: function (){ -en vez de- () =>
 window.addEventListener('load', () => {
 
             // Eventos del Raton
