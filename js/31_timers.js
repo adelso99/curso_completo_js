@@ -26,7 +26,7 @@ var tiempo = intervalo();
     
     start.addEventListener("click", function(){
         alert("Has Iniciado el intervalo del Bucle");
-        intervalo();
+        intervalo(tiempo);
     });
 
  // Boton de Finalizacion (STOP)
