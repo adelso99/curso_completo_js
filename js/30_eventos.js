@@ -28,6 +28,9 @@ window.addEventListener('load', () => {
         //Click
         boton.addEventListener('click', function(){
             cambiarColor();
+            //el operador this hace referencia al objeto que se este dando click
+            console.log(this);
+            this.style.border = "10px solid black";
         });
 
         //Mouse Over: pasar por encima de un boton cambia de color
