@@ -34,3 +34,5 @@ document.querySelector("#datos").append(" "+userjs.web+" - "+userjs.nombre);
 
 //localStorage.removeItem("usuario");
 localStorage.clear();
+
+
