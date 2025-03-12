@@ -32,3 +32,4 @@ formulariob.addEventListener('submit', function(){
     }
     
 });
+//vamos
