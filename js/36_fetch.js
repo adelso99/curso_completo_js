@@ -3,6 +3,7 @@
 //Fetch (ajax) y peticiones a servicios / apis rest
 
 var div_usuarios = document.querySelector('#usuarios');
+var div_profesor = document.querySelector('#profesor');
 var div_miguel = document.querySelector('#Miguel');
 
 
@@ -12,15 +13,20 @@ var div_miguel = document.querySelector('#Miguel');
     .then(users => {
     listadoUsuarios(users.data);
     //console.log(usuarios);
+    return getInfo();
+    
+    })
+    .then(data => {
+        div_profesor.innerHTML = data;
 
-    return getMiguel();
-
+        return getMiguel();
     })
     .then(data => data.json())
     .then(user => {
         mostrarMiguel(user.data);
-    });
 
+    })
+    
 function getUsuarios(){
     // esto es una promesa
     return fetch('https://reqres.in/api/users');
@@ -29,6 +35,27 @@ function getUsuarios(){
 function getMiguel(){
     // esto es una promesa
     return fetch('https://reqres.in/api/users/2');
+}
+
+function getInfo(){
+    var profesor = {
+        nombre: 'Adelso',
+        apellidos: 'Hernandez',
+        url: 'https://github.com/adelso99?tab=overview&from=2025-03-01&to=2025-03-20'
+    };
+
+    //Nueva Promesa desde 0
+    return new Promise((resolve, reject) => {
+    var profesor_string = "";
+     setTimeout(function(){
+        profesor_string = JSON.stringify(profesor);
+        if(typeof profesor_string != 'string' || profesor_string == '') return reject('error 1');
+
+        return resolve(profesor_string);
+     }, 300);
+   
+    });
+    
 }
 
 function listadoUsuarios(usuarios){
