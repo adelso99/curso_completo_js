@@ -44,7 +44,7 @@ function getInfo(){
     var profesor = {
         nombre: 'Adelso',
         apellidos: 'Hernandez',
-        url: 'https://github.com/adelso99?tab=overview&from=2025-03-01&to=2025-03-20'
+        url: 'https://github.com/adelso99'
     };
 
     //Nueva Promesa desde 0
