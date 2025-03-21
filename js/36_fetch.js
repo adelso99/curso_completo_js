@@ -24,8 +24,11 @@ var div_miguel = document.querySelector('#Miguel');
     .then(data => data.json())
     .then(user => {
         mostrarMiguel(user.data);
-
     })
+    .catch(error => {
+        console.log(error);
+        alert("Error en las peticiones");
+    });
     
 function getUsuarios(){
     // esto es una promesa
