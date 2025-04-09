@@ -14,7 +14,13 @@ $(document).ready(function(){
     $("#verde").css("background", "green")
                   .css("color", "white");
     
+    //Selector de Clases
+    var mi_clase = $('.zebra').css("padding", "5px");
 
+    $('.sin_borde').click(function(){
+        console.log("click dado!!");
+        $(this).addClass('zebra');
+    });
 
 
 });
