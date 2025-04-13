@@ -40,6 +40,14 @@ $(document).ready(function(){
     $('[title="Google"]').css('background', '#ccc');
     $('[title="Facebook"]').css('background', 'blue');
 
+    //Otros
+    //Agregar margen superior
+    //$('p, a').addClass('margen-superior');
+
+    //Buscar elementos espesificos con clase
+   var busqueda = $("#elemento2").parent().parent().find('.resaltado');
+
+   console.log(busqueda);
 
 });
 
