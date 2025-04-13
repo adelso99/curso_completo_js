@@ -36,6 +36,11 @@ $(document).ready(function(){
         }
     });
 
+    //Selectores de atributo: Se debe usar los []
+    $('[title="Google"]').css('background', '#ccc');
+    $('[title="Facebook"]').css('background', 'blue');
+
+
 });
 
 // por hoy :)
