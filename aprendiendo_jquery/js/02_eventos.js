@@ -16,7 +16,7 @@ $(document).ready(function(){
      */
 
      //metodo "Hover"
-     
+
      function cambiaRojo(){
         $(this).css("background", "red"); 
      };
@@ -28,5 +28,16 @@ $(document).ready(function(){
      //metodo "Hover"
 
      caja.hover(cambiaRojo, cambiaVerde);
+
+     //Evento Click, Doble Click
+     caja.click(function(){
+        $(this).css("background", "blue")
+               .css("color", "white");
+     });
+
+     caja.dblclick(function(){
+        $(this).css("background", "pink")
+               .css("color", "yellow");
+     });
 
 });
