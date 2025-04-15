@@ -5,6 +5,7 @@ $(document).ready(function(){
     //Eventos MouseOver y MouseOut
     var caja = $("#caja");
     
+    /*
     caja.mouseover(function(){
        $(this).css("background", "red"); 
     });
@@ -12,5 +13,20 @@ $(document).ready(function(){
     caja.mouseout(function(){
         $(this).css("background", "green"); 
      });
+     */
+
+     //metodo "Hover"
+     
+     function cambiaRojo(){
+        $(this).css("background", "red"); 
+     };
+
+     function cambiaVerde(){
+        $(this).css("background", "green"); 
+     };
+
+     //metodo "Hover"
+
+     caja.hover(cambiaRojo, cambiaVerde);
 
 });
