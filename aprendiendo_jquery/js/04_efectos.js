@@ -7,21 +7,25 @@ $(document).ready(function(){
         $("#mostrar").hide();
               
         $("#mostrar").click(function(){
-            $(this).hide();
-            $("#ocultar").show();
+            $(this).hide();  // Oculta el mismo botón
+            $("#ocultar").show();  // Muestra el botón "ocultar"
 
-            $("#caja").slideDown('slow');
+            //slideDown: muestra con deslizamiento
+            $("#caja").slideDown('slow'); // Muestra la caja con una animación deslizante lenta
         });
 
         $("#ocultar").click(function(){
-            $(this).hide();
-            $("#mostrar").show();
+            $(this).hide(); // Oculta el mismo botón
+            $("#mostrar").show(); // Muestra el botón "mostrar"
 
-            $("#caja").slideUp('slow');
+            //slideUp: oculta con deslizamiento.
+            $("#caja").slideUp('slow'); // Oculta la caja con una animación deslizante lenta
         });
 
         $("#todoenuno").click(function(){
-            $("#caja").slideToggle('fast');
+
+            //slideToggle: cambia entre mostrar y ocultar automáticamente.
+            $("#caja").slideToggle('fast'); // Alterna entre mostrar y ocultar la caja con animación rápida
         });
 
 
