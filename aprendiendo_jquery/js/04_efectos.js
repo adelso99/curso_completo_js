@@ -21,7 +21,10 @@ $(document).ready(function(){
             $("#mostrar").show(); // Muestra el botón "mostrar"
 
             //slideUp: oculta con deslizamiento.
-            caja.slideUp('slow'); // Oculta la caja con una animación deslizante lenta
+            caja.slideUp('slow', function(){ // Oculta la caja con una animación deslizante lenta
+                console.log("Cartel Ocultado");
+            }); 
+            
         });
 
         $("#todoenuno").click(function(){
