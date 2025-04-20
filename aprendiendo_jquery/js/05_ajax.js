@@ -6,7 +6,7 @@ $(document).ready(function(){
    //$("#datos").load("https://reqres.in/");
 
    //Metodos GET y POST
-   //GET
+   //1. GET
    $.get("https://reqres.in/api/users", {page: 2}, function(response){
     response.data.forEach((element, index) => {
         $("#datos").append("<p>"+element.first_name+" "+element.last_name+"</p>");
@@ -24,7 +24,7 @@ $(document).ready(function(){
  // });
 
 
-     // Eventos de POST
+     // 2. Eventos de POST
   //Trabajando sobre el formulario
  $("#formulario").submit(function(e){
     e.preventDefault();
@@ -34,10 +34,33 @@ $(document).ready(function(){
           web: $('input[name="web"]').val()
       };
       
+      /*
       $.post($(this).attr("action"), usuario, function(response){
         console.log(response);
       }).done(function(){
         alert("Usuario Añadido Correctamente");
+     });
+     */
+
+     // 2.1 Tamnbien esta usar AJAX asi como POST:
+
+     $.ajax({
+        type: 'POST',
+        url: $(this).attr("action"),
+        data: usuario,
+        //METODO BeforeSend: Antes que se envie haga una opcion
+        beforeSend: function(){
+            console.log("Enviando Usuario...");
+        },
+        success: function(response){
+          console.log(response);
+        },
+        error: function(){
+          console.log("A ocurrido un Error.... :( ");
+        },
+        timeout: 1000
+        //dataType: 'json',
+        //contentType: 'aplication/json'
      });
 
       return false;
