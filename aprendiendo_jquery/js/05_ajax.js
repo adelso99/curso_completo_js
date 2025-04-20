@@ -23,4 +23,8 @@ $(document).ready(function(){
    // });
  // });
 
+
+ // Eventos de POST
+ $.post();
+
 });
