@@ -25,6 +25,6 @@ $(document).ready(function(){
 
 
  // Eventos de POST
- $.post();
+ $.post("https://reqres.in/api/users");
 
 });
