@@ -24,7 +24,24 @@ $(document).ready(function(){
  // });
 
 
- // Eventos de POST
- $.post("https://reqres.in/api/users");
+     // Eventos de POST
+  //Trabajando sobre el formulario
+ $("#formulario").submit(function(e){
+    e.preventDefault();
+    
+        var usuario = {
+          name: $('input[name="name"]').val(),
+          web: $('input[name="web"]').val()
+      };
+      
+      $.post($(this).attr("action"), usuario, function(response){
+        console.log(response);
+      }).done(function(){
+        alert("Usuario Añadido Correctamente");
+     });
+
+      return false;
+
+ });
 
 });
