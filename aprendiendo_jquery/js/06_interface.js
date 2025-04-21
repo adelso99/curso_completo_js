@@ -8,4 +8,7 @@ $(document).ready(function(){
     //redimensionar elementos
     $('.elemento').resizable();
 
+    //Selecionar Elemntos de la lsita
+    $(".lista_seleccionable").selectable();
+
 });
