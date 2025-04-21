@@ -2,13 +2,20 @@
 $(document).ready(function(){
     //console.log("hola");
 
-    //draggable: Mover elemento por la pagina
+    //1. draggable: Mover elemento por la pagina
     $('.elemento').draggable();
 
-    //redimensionar elementos
+    //2. redimensionar elementos
     $('.elemento').resizable();
 
-    //Selecionar Elemntos de la lsita
-    $(".lista_seleccionable").selectable();
+    //3 Selecionar Elemntos de la lsita
+    //$(".lista_seleccionable").selectable();
+
+      // 3.1 Metodo ordenar
+      $(".lista_seleccionable").sortable({
+        update: function(event, ui){
+            console.log("A cambiado la lista");
+        }
+      });
 
 });
