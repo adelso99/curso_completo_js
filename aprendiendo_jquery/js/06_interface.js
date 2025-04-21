@@ -5,4 +5,7 @@ $(document).ready(function(){
     //draggable: Mover elemento por la pagina
     $('.elemento').draggable();
 
+    //redimensionar elementos
+    $('.elemento').resizable();
+
 });
