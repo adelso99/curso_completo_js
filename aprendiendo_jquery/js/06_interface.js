@@ -18,4 +18,12 @@ $(document).ready(function(){
         }
       });
 
+      // Drop: Deteccion de elemento
+      $("#elemento_movido").draggable();
+      $("#area").droppable({
+            drop: function(){
+                console.log("Has soltado algo dentro del area");
+            }
+      });
+
 });
