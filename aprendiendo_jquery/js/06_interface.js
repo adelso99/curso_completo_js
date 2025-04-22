@@ -31,4 +31,7 @@ $(document).ready(function(){
         $(".caja_efectos").toggle("shake", 4000);
       });
 
+      //Metodo Tooltip
+      $(document).tooltip();
+
 });
