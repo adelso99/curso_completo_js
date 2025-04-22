@@ -26,4 +26,9 @@ $(document).ready(function(){
             }
       });
 
+      //Efectos
+      $("#mostrar").click(function(){
+        $(".caja_efectos").toggle("shake", 4000);
+      });
+
 });
