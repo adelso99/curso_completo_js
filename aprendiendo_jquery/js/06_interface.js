@@ -34,4 +34,9 @@ $(document).ready(function(){
       //Metodo Tooltip
       $(document).tooltip();
 
+      //Metodo Dialog
+      $("#lanzar_popup").click(function(){
+        $("#popup").dialog();
+      });
+      
 });
