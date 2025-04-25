@@ -12,7 +12,7 @@
 
 body{
     /*los dos puntos antes me sirven para poder ingresar a directorio padre para ir a la carptea IMG*/
-    background: url("../img/hojas.jpg");
+    background: url("../img/code.jpg");
     background-attachment: fixed;
 }
 #global{
