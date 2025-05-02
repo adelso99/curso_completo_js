@@ -10,11 +10,6 @@
 }
 
 
-body{
-    /*los dos puntos antes me sirven para poder ingresar a directorio padre para ir a la carptea IMG*/
-    background: url("../img/code.jpg");
-    background-attachment: fixed;
-}
 #global{
     width: 65%;
     margin: 0px auto;
@@ -107,7 +102,6 @@ body{
     text-align: center;
     display: block;
     padding: 15px;
-    background: #00c3f9;
     color: black;
     text-decoration: none;
     margin-top: 10px;
@@ -182,9 +176,34 @@ footer {
 .bx wrapper, .bx-viewport {
     height: 350px !important;
 }
-
-
-
+#selector_theme{
+    position: fixed;
+    top: 40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height: 100px;
+}
+#to-blue,
+#to-red,
+#to-purple{
+    width: 25px;
+    height: 25px;
+    border: 1px solid white;
+    display: block;
+    margin: 0px auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#to-blue{
+    background: #001aff;
+}
+#to-red{
+    background: #f10000;
+}
+#to-purple{
+    background: #ab04abed;
+}
 
 /*
 Progress.........

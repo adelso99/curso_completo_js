@@ -1,0 +1,20 @@
+body{
+    /*los dos puntos antes me sirven para poder ingresar a directorio padre para ir a la carptea IMG*/
+    background: url("../img/2.jpg");
+    background-attachment: fixed;
+}
+#logo{
+    background: #001aff;
+}
+#menu ul li:hover{
+    background: #00aaff;
+}
+.button-more{
+    background: #00c3f9;   
+}
+form input[type="submit"]{
+    background: #00c3f9;
+}
+footer {
+    background: rgba(0, 208, 255, 0.7);
+}

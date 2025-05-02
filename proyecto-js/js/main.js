@@ -62,5 +62,23 @@ $(document).ready(function(){
     });
 
 
+    // Selector de Temas
+    //Creacion de variable para una mejor optimicion
+    var theme = $("#theme");
+
+    // Tema Principal blue: Azul
+    $("#to-blue").click(function(){
+        theme.attr("href", "css/blue.css");
+    });
+
+    // Tema red: Rojo
+    $("#to-red").click(function(){
+        theme.attr("href", "css/red.css");
+    });
+
+    // Tema purple: Morado
+    $("#to-purple").click(function(){
+        theme.attr("href", "css/purple.css");
+    });
 
 });
