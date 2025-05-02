@@ -212,6 +212,13 @@ footer {
     height: 100%;
 }
 
+.subir{
+    color: white;
+    text-decoration: none;
+    display: block;
+    float: right;
+}
+
 /*
 Progress.........1
 */
