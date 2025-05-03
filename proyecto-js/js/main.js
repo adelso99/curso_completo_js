@@ -103,8 +103,9 @@ $(document).ready(function(){
 
     if(form_name != null && form_name != "undefined"){
       var about_parrafo = $("#about p");
-      about_parrafo.html("<br><strong>Bienvenido, "+form_name+"</strong>");
-      about_parrafo.append("<a href='#' id='logout'>Cerrar Sesion</a>");
+
+      about_parrafo.html("<br><strong>Bienvenido "+form_name+"</strong> ");
+      about_parrafo.append("<button href='#' id='logout' style='background: blue; color: white;' >Cerrar Sesion</button>");
             
       $("#login").hide();
 
