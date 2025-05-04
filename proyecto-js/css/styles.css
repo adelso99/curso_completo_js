@@ -79,7 +79,8 @@
     padding: 7px;
 }
 
-.post h2{
+h2{
+    font-family: Helvetica, Arial;
     font-size: 30px;
     color: #333;
 }
@@ -219,6 +220,21 @@ footer {
     float: right;
 }
 
+#box{
+    width: 60%;
+    float: left;
+    margin-top: 40px;
+}
+
+#acordeon{
+    margin-top: 20px;
+}
+
+#acordeon h3{
+    background: rgb(0, 89, 255);
+    color: white;
+
+}
 /*
 Progress.........1
 */

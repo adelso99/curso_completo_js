@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
   // 2. Este es la parte del Slider
+  if(window.location.href.indexOf('index') > -1){
+
     $('.galeria').bxSlider({
         mode: 'fade',
         captions: false,
@@ -8,9 +10,11 @@ $(document).ready(function(){
         responsive: true,
         pager: false
       });
-
+    }
 
     // 3. POSTS PARA
+    if(window.location.href.indexOf('index') > -1){
+
     var posts = [
         {
           title: 'Nombre del Titulo 1',
@@ -61,6 +65,7 @@ $(document).ready(function(){
 
     });
 
+  }
 
     // Selector de Temas
     //Creacion de variable para una mejor optimicion
@@ -113,6 +118,11 @@ $(document).ready(function(){
         localStorage.clear();
         location.reload();
       });
+    }
+
+    if(window.location.href.indexOf('about') > -1){
+      $("#acordeon").accordion();
+    
     }
 
 });
