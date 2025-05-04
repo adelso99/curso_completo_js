@@ -18,3 +18,7 @@ form input[type="submit"]{
 footer {
     background: rgba(0, 208, 255, 0.7);
 }
+#acordeon h3{
+    background: #00c3f9;
+
+}
