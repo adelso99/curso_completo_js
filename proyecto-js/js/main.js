@@ -127,8 +127,13 @@ $(document).ready(function(){
     }
 
     // Este sera el apartado para el reloj 
-    if(window.location.href.indexOf('index') > -1){
-      $("#reloj").reloj();
+    if(window.location.href.indexOf('reloj') > -1){
+      var reloj = moment().format("h:mm:ss ");
+      $('#reloj').html(reloj);
     }
 
 });
+
+
+
+
