@@ -120,9 +120,15 @@ $(document).ready(function(){
       });
     }
 
+    //Esto es el apartado para el acordeon 
     if(window.location.href.indexOf('about') > -1){
       $("#acordeon").accordion();
     
+    }
+
+    // Este sera el apartado para el reloj 
+    if(window.location.href.indexOf('index') > -1){
+      $("#reloj").reloj();
     }
 
 });
