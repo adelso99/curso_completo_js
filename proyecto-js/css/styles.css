@@ -235,6 +235,15 @@ footer {
     color: white;
 
 }
+
+#reloj{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Helvetica, Arial;
+    color: #333;
+    border: 5px solid #333;
+
+}
 /*
 Progress.........1
 */
