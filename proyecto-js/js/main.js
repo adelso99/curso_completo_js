@@ -129,11 +129,11 @@ $(document).ready(function(){
     // Este sera el apartado para el reloj 
     if(window.location.href.indexOf('reloj') > -1){
 
-      setInterval{
+      setInterval(function(){
+    
       var reloj = moment().format("h:mm:ss ");
       $('#reloj').html(reloj);
-
-        }
+      }, 1000);
     }
 
 });
