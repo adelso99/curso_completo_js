@@ -146,7 +146,9 @@ $(document).ready(function(){
       });
           //Validacion como tal
         $.validate({
-          lang: 'es'
+          lang: 'es',
+          errorMessagePosition: 'top',
+          scrollToTopOnError: true
         });
 
         }
