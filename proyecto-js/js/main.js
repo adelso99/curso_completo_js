@@ -136,6 +136,21 @@ $(document).ready(function(){
       }, 1000);
     }
 
+    //Validacion del Formulario de la seccion CONTACTO del index.html
+   
+    // If para que solo se ejecute en la paagina de contacto
+    if(window.location.href.indexOf('contacto') > -1){
+
+      $("form input[name='date']").datepicker({
+        dateFormat: 'dd-mm-yy'
+      });
+          //Validacion como tal
+        $.validate({
+          lang: 'es'
+        });
+
+        }
+
 });
 
 

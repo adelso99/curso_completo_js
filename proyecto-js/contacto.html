@@ -17,8 +17,13 @@
     
             <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
 
-            <!--Plugin Validacion-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.1.47/jquery.form-validator.min.js"></script>
+            <!-- Plugin principal de jQuery Form Validator -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.79/jquery.form-validator.min.js"></script>
+
+            <!-- Idioma español -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.79/lang/es.js"></script>
+
+
 
             <!--Mis Scripts-->
             <script type="text/javascript" src="js/main.js"></script> 
@@ -59,25 +64,25 @@
                     <form action="" method="POST" id="formcontact">
                         
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" />
+                        <input type="text" name="name" data-validation="alphanumeric" />
                         
                         <label for="surname">Apellidos</label>
-                        <input type="text" name="surname" />
+                        <input type="text" name="surname" data-validation="alphanumeric" />
                         
                         <label>Email</label>
-                        <input type="email" name="email" />
+                        <input type="email" name="email" data-validation="email" />
                         
                         <label for="sex">Sexo</label>
-                        <select name="sex">
+                        <select name="sex" data-validation="required">
                             <option value="men">Hombre</option>
                             <option value="woman">Mujer</option>
                         </select>
                         
                         <label for="date">Fecha de Nacimiento</label>
-                        <input type="text" name="date" />
+                        <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy" />
 
                         <label for="years">Edad</label>
-                        <input type="number" name="years" />
+                        <input type="number" name="years" data-validation="number" />
 
                         <input type="submit" value="Enviar" />
 

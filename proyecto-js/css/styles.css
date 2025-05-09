@@ -260,31 +260,19 @@ footer {
     width: 100%;
     margin-top: 5px;
 }
-/*
-Progress.........1
-*/
-/*
-Progress.........1
-*/
-/*
-Progress.........1
-*/
-/*
-Progress.........1
-*/
-/*
-Progress.........1
-*/
-/*
-Progress.........1
-*/
-/*
-Progress.........1
-*/
-/*
-Progress.........1
-*/
+.form-error{
+    float: right;
+    font-size: 11px;
+    background: red;
+    color: white;
+    padding: 10px;
+    width: 65%;
+}
 
+
+/*
+Progress.........1
+*/
 
 
 
