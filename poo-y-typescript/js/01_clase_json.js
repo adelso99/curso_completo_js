@@ -27,13 +27,4 @@ pogress....2
 */
 
 
-/*
-vamos por todo ....1
-*/
-
-
-
-/*
-pogress....3
-*/
 
