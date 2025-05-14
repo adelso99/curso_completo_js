@@ -18,21 +18,16 @@ bicicleta.cambiarColor("Azul");
 
 
 /*
-pogress...1
+pogress......1
 */
 
 
 /*
-pogress...2
+pogress......2
 */
 
 /*
-pogress...3
-*/
-
-
-/*
-pogress...4
+pogress......3
 */
 
 
