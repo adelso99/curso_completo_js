@@ -20,9 +20,6 @@ bicicleta.cambiarColor("Azul");
 /*
 pogress......1
 */
-/*
-pogress.....2
-*/
 
 
 
