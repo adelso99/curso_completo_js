@@ -1,5 +1,6 @@
 //Dato String
 var cadena = "Adelso Hernandez";
+cadena = 15;
 //Dato Number
 var numero = 12;
 //Dato Boleano

@@ -1,5 +1,7 @@
 //Dato String
-let cadena: string = "Adelso Hernandez";
+let cadena: string | number = "Adelso Hernandez";
+
+cadena = 15;
 
 //Dato Number
 let numero: number = 12;
