@@ -1,5 +1,9 @@
+// Se puede definir de una vez un tipo de dato
+type letrasonumeros = string | number;
+
+
 //Dato String
-let cadena: string | number = "Adelso Hernandez";
+let cadena: letrasonumeros = "Adelso Hernandez";
 
 cadena = 15;
 
