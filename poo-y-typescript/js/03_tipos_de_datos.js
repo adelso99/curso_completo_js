@@ -16,11 +16,6 @@ var years = [2, 3, 21, 12];
 console.log(cadena, numero, verdadero_falso, cualquiera, lenguajes, years);
 
 /*
-pogress......1
+pogress lest go..........1
 */
-
-/*
-pogress......1
-*/
-
 
