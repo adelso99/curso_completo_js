@@ -14,3 +14,11 @@ var lenguajes = ["PHP", "JS", "CSS"];
 // Forma 2
 var years = [2, 3, 21, 12];
 console.log(cadena, numero, verdadero_falso, cualquiera, lenguajes, years);
+
+/*
+pogress......1
+*/
+
+/*
+pogress......1
+*/
