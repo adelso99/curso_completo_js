@@ -18,4 +18,12 @@ console.log(cadena, numero, verdadero_falso, cualquiera, lenguajes, years);
 /*
 pogress lest go..........1
 */
+/*
+pogress lest go..........2
+
+pogress lest go..........3
+
+*/
+
+
 
