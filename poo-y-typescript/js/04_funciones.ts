@@ -4,6 +4,6 @@ function getNumero(numero:number = 12):string{
 console.log(getNumero(55));
 
 /*
-Lets go ----->1
+Lets go ----------------------------> 1
 */
 
