@@ -5,4 +5,10 @@ function getNumero(numero) {
 console.log(getNumero(55));
 /*
 Lets go ----->
+*/
+/*
+Lets go ----->
+*/
+/*
+Lets go ----->
 */ 
