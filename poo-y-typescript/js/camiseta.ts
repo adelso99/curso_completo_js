@@ -2,7 +2,16 @@
 //Regularmente la clase debe de llamarse igual que el fichero
 
 //export: para exportar a otro fichero ts una clase para usarla
-export class Camiseta{
+//export class Camiseta{
+
+//Interface
+interface CamisetaBase{
+    setColor(color);
+    getColor();
+}
+
+
+class Camiseta implements CamisetaBase{
 
     // Propiedades (caracteristicas del objeto)
     private color: string;
@@ -30,6 +39,9 @@ export class Camiseta{
     }
 
 }
+
+var camiseta = new Camiseta("fdsa", "fdsa", "fdsa", "fdsa", 12);
+console.log(camiseta);
 
 
 

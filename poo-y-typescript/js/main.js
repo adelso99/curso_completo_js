@@ -1,5 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
+//import: para importar desde otro fichero ts una clase para usarla
+//import { Camiseta } from "./camiseta";
 var Main = /** @class */ (function () {
     function Main() {
         console.log("Aplicacion Cargada!!");

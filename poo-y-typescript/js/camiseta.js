@@ -1,9 +1,5 @@
-"use strict";
 // Clase (Molde del Objeto, donde se crean un moton de objetos con caratersiticas similares)
 //Regularmente la clase debe de llamarse igual que el fichero
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Camiseta = void 0;
-//export: para exportar a otro fichero ts una clase para usarla
 var Camiseta = /** @class */ (function () {
     // Metodos (Funciones o accione del objeto)
     function Camiseta(color, modelo, marca, talla, precio) {
@@ -21,7 +17,8 @@ var Camiseta = /** @class */ (function () {
     };
     return Camiseta;
 }());
-exports.Camiseta = Camiseta;
+var camiseta = new Camiseta("fdsa", "fdsa", "fdsa", "fdsa", 12);
+console.log(camiseta);
 /*
 var camiseta = new Camiseta("rojo", "manga larga", "nike", "s", 14);
 camiseta.setColor("Rojo");
