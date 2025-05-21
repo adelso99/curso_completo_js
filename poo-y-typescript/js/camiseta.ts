@@ -1,4 +1,3 @@
-// Clase (Molde del Objeto, donde se crean un moton de objetos con caratersiticas similares)
 //Regularmente la clase debe de llamarse igual que el fichero
 
 //export: para exportar a otro fichero ts una clase para usarla
@@ -10,7 +9,7 @@ interface CamisetaBase{
     getColor();
 }
 
-
+// Clase (Molde del Objeto, donde se crean un moton de objetos con caratersiticas similares)
 class Camiseta implements CamisetaBase{
 
     // Propiedades (caracteristicas del objeto)
@@ -40,9 +39,27 @@ class Camiseta implements CamisetaBase{
 
 }
 
+//Clase Hija: se usa "extends"
+class Sudadera extends Camiseta{
+    public capucha: boolean;
+
+    setCapucha(capucha: boolean){
+        this.capucha = capucha;
+    }
+
+    getCapucha(){
+        return this.capucha;
+    }
+}
+
 var camiseta = new Camiseta("fdsa", "fdsa", "fdsa", "fdsa", 12);
 console.log(camiseta);
 
+
+var sudadera_nike = new Sudadera("Rojo", "Manga Larga", "Nike", "S", 20);
+sudadera_nike.setCapucha(true);
+sudadera_nike.setColor("Verde");
+console.log(sudadera_nike);
 
 
 
