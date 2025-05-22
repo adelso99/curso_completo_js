@@ -96,3 +96,4 @@ playera.precio = 35;
 console.log(camiseta);
 
 */
+/*proges */
