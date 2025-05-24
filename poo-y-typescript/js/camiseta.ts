@@ -99,14 +99,12 @@ console.log(camiseta);
 
 
 /*
-proges .......... 1
+proges ............. 1
 */
 /*
-proges .......... 2
+proges ............. 2
 */
-/*
-proges .......... 3
-*/
+
 
 
 
