@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component } from '@angular/core';
 
 // No se cierra con ";" porque es un decorador para una clase
 @Component({
@@ -13,3 +13,11 @@ import { Component } from "@angular/core";
         </ul>
      `
 })
+
+export class VideojuegoComponent {
+
+    constructor(){
+        console.log("Se ha cargado el componente: Videojuego.component.ts");
+    }
+
+}
