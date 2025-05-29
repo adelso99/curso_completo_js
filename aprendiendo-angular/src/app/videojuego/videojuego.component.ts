@@ -3,20 +3,19 @@ import { Component } from '@angular/core';
 // No se cierra con ";" porque es un decorador para una clase
 @Component({
      selector: 'videojuego',
-     template: `
-        <h2>Componente de Videojuego</h2>
-        <ul>
-            <li>GTA 6</li>
-            <li>FC25</li>
-            <li>DLS25</li>
-            <li>Mainecraft</li>
-        </ul>
-     `
+     // Cargando el Html de videojuego desde url
+     templateUrl: './videojuego.component.html' 
 })
 
 export class VideojuegoComponent {
+    public titulo: string;
+    public listado: string;
 
     constructor(){
+        // Assignado valor al titulo
+        this.titulo = "Componente de Videojuegos";
+        this.listado = "Listado de los juegos mas populares";
+
         console.log("Se ha cargado el componente: Videojuego.component.ts");
     }
 
