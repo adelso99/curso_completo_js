@@ -13,3 +13,7 @@ export class AppComponent {
     this.mostrar_videojuegos = value;
   }
 }
+
+/*
+pogress ..... 1
+*/
