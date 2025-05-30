@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 // No se cierra con ";" porque es un decorador para una clase
 @Component({
@@ -17,6 +17,10 @@ export class VideojuegoComponent {
         this.listado = "Listado de los juegos mas populares";
 
         console.log("Se ha cargado el componente: Videojuego.component.ts");
+    }
+    
+    ngOnInit(){
+        console.log("OnInit Ejecutado");
     }
 
 }
