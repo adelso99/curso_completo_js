@@ -7,9 +7,12 @@
     Vamos a aprender Angular Juntos
   </p>
 
+  <button (click)="ocultarVideojuegos(false)" *ngIf="mostrar_videojuegos">Ocultar</button>
+  <button (click)="ocultarVideojuegos(true)" *ngIf="!mostrar_videojuegos">Mostrar</button>
+
   <!--Cargando el Componente Videojuego-->
-  <videojuego></videojuego>
- 
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
+  <cursos></cursos>
   <cursos></cursos>
   
 
