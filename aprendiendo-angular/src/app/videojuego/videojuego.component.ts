@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, DoCheck } from '@angular/core';
 
 // No se cierra con ";" porque es un decorador para una clase
 @Component({
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
      templateUrl: './videojuego.component.html' 
 })
 
-export class VideojuegoComponent {
+export class VideojuegoComponent implements OnInit, DoCheck {
     public titulo: string;
     public listado: string;
 
@@ -21,6 +21,14 @@ export class VideojuegoComponent {
     
     ngOnInit(){
         console.log("OnInit Ejecutado");
+    }
+
+    ngDoCheck(){
+        console.log("DoChek Ejecutado");
+    }
+
+    cambiarTitulo(){
+        this.titulo = "Nuevo titulo del componente";
     }
 
 }
