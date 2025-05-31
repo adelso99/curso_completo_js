@@ -1,6 +1,8 @@
 <h2>{{titulo}}</h2>
 <ul>
-    <li>AF1</li>
-    <li>Nike</li>
-    <li>Vans</li>
+    <!--con la directica ngFor permite recorrer el array y mostrar valore-->
+    <li *ngFor="let deportiva of zapatillas">
+        {{deportiva.nombre}} - <strong>{{deportiva.precio}}</strong>
+    </li>
+
 </ul>
