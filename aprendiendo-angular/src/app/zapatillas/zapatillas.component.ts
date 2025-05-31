@@ -15,7 +15,9 @@ export class ZapatillasComponent implements OnInit{
 
     constructor(){
         this.zapatillas = [
-            new Zapatilla('Reebook Classic', 'Reebook', 'Blanco', 80, true)
+            new Zapatilla('Reebook Classic', 'Reebook', 'Blanco', 80, true),
+            new Zapatilla('Nike Panda', 'Nike', 'Negras', 60, true),
+            new Zapatilla('Nike AF1', 'Nike', 'Blanco', 150, false)
         ];
     }
 
