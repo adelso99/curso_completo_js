@@ -1,5 +1,9 @@
 <h2>{{titulo}}</h2>
-<p>Compa las zapatillas de las mejores marcas</p>
+<p>Compa las zapatillas de las mejores marcas<
+    <ul>
+        <li *ngFor="let marca of marcas">{{marca}}</li>
+    </ul>
+
 <ul>
     <!--con la directica ngFor permite recorrer el array y mostrar valore-->
     <li *ngFor="let deportiva of zapatillas">
