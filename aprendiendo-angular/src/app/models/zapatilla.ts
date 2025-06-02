@@ -37,7 +37,3 @@ export class Zapatilla{
 /*
 pogress ........ 1
 */
-/*
-pogress ......... 2
-*/
-
