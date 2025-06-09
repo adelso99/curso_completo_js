@@ -59,6 +59,12 @@ export class ZapatillasComponent implements OnInit{
         // con el 1 indico que solo 1 elemento se borra
         this.marcas.splice(index, 1);
     }
+    onBlur(){
+        console.log("Has salido del Input");
+    }
+    mostrarPalabra(){
+        alert(this.mi_marca);
+    }
 
 }
 
