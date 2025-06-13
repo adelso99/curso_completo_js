@@ -72,3 +72,7 @@ export class ZapatillasComponent implements OnInit{
 pogress ......................... 1
 */
 
+/*
+pogress ......................... 2
+*/
+
