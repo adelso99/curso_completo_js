@@ -4,7 +4,7 @@ import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 //Importacion de los componentes
-import {  HomeComponent } from './home/home.component';
+import { HomeComponent } from './home/home.component';
 import { ZapatillasComponent } from './zapatillas/zapatillas.component';
 import { VideojuegoComponent } from './videojuego/videojuego.component';
 import { CursosComponent } from './cursos/cursos.component';
@@ -15,7 +15,7 @@ const appRoutes: Routes = [
     {path: 'zapatillas', component:  ZapatillasComponent},
     {path: 'videojuego', component:  VideojuegoComponent},
     {path: 'cursos', component:  CursosComponent},
-    {path: **, component: HomeComponent}
+    {path: '**', component: HomeComponent}
 
 ];
 
