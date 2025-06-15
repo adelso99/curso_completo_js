@@ -22,9 +22,15 @@ export class CursosComponent implements OnInit {
       this.followers = +params.followers;
       //Tambien se puede hacer asi: ['nombre']
       //this.nombre = params['nombre'];
-
+      if(this.nombre == 'ninguno'){
+         this._router.navigate(['/home']);
+      }
 
     });
+  }
+
+  redirigir(){
+    this._router.navigate(['/zapatillas']);
   }
 
 }
