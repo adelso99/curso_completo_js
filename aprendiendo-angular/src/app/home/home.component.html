@@ -1,8 +1,6 @@
 <h2>Pagina Principal</h2>
-
-<div *ngIf="identificado; then siidentificado else noIdentificado">
-   
-</div>
+<!--then: Sirve para tener varias templates un identificado y otra no-->
+<div *ngIf="identificado; then siidentificado else noIdentificado"></div>
 
 <ng-template #siidentificado>
     <h3>Estas Identificado en la Aplicacion</h3>
