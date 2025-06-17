@@ -9,11 +9,15 @@ export class PeticionesService {
   constructor(
     public _http: HttpClient
 ){
-    this.url = "https://reqres.in";
+    this.url = "https://reqres.in/";
 }
 
   getUser(userId): Observable<any>{
-    return this._http.get(this.url + '/api/users/'+userId);
+    const headers = new HttpHeaders({
+        'x-api-key': 'reqres-free-v1'
+      });
+
+    return this._http.get(this.url+'api/users/'+userId, { headers });
   }
 
 }
