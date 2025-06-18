@@ -11,6 +11,3 @@ export class ContactoUsuario{
 /*
 Vamos ..............1
 */
-/*
-Vamos ..............2
-*/
