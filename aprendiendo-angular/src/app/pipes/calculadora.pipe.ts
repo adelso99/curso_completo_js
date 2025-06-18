@@ -12,7 +12,7 @@ export class CalculadoraPipe implements PipeTransform{
             Suma: ${value+value_two} -
             Resta: ${value-value_two} -
             Multiplicacion: ${value*value_two} -
-            Division: ${value/value_two} -
+            Division: ${value/value_two} 
         `;
 
         return operaciones;
