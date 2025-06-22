@@ -15,6 +15,7 @@ export class ExternoComponent implements OnInit {
   public fecha: any;
 
   public new_user: any;
+  public usuario_guardado;
 
   constructor(
     private _peticionesService: PeticionesService
@@ -48,7 +49,7 @@ export class ExternoComponent implements OnInit {
      
     this._peticionesService.addUser(this.new_user).subscribe(
       response => {
-        console.log(response);
+        this.usuario_guardado = response;
 
         form.reset();
       },
