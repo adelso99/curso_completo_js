@@ -21,8 +21,11 @@ export class PeticionesService {
   }
 
   addUser(user): Observable<any>{
+
     let params = JSON.stringify(user);
-    let headers = new HttpHeaders().set('Content-Type', 'aplication/json');
+    let headers = new HttpHeaders()
+      .set('Content-Type', 'application/json')
+      .set('x-api-key', 'reqres-free-v1');     // aquí va tu API key ;
 
     return this._http.post(this.url+'api/users', params, {headers: headers});
 

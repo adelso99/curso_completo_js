@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PeticionesService } from '../service/peticiones.service';
+import { error } from 'console';
 
 @Component({
   selector: 'app-externo',
@@ -41,6 +42,20 @@ export class ExternoComponent implements OnInit {
             console.log(<any>error);
           }
       );
+  }
+
+  onSubmit(form){
+     
+    this._peticionesService.addUser(this.new_user).subscribe(
+      response => {
+        console.log(response);
+
+        form.reset();
+      },
+      error => {
+        console.log(<any>error);
+      }
+    );
   }
 
 }
