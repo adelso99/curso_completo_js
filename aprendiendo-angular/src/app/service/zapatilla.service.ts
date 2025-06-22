@@ -29,7 +29,4 @@ export class ZapatillaService{
 Progress ................1
 */ 
 
-/*
-Progress ................2
-*/ 
 
