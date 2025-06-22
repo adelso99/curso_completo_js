@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PeticionesService } from '../service/peticiones.service';
-import { error } from 'console';
+
 
 @Component({
   selector: 'app-externo',
