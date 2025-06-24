@@ -80,7 +80,3 @@ Progreess ........4
 Progreess ........5
 */
 
-/*
-Progreess ........6
-*/
-
