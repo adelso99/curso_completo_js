@@ -65,8 +65,4 @@ export class ExternoComponent implements OnInit {
 Progreess .............1
 */
 
-/*
-Progreess .............2
-*/
-
 
