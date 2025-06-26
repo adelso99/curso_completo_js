@@ -17,7 +17,11 @@ app.use(bodyParser.json());
 //Configuracion de Rutas
 
     //ruta de prueba 1
-app.get('/test', (req, res) => {
+app.post('/test/:id', (req, res) => {
+    console.log(req.body.nombre);
+    console.log(req.query.web);
+    console.log(req.params.id);
+
     res.status(200).send({
         message: "Hola Mundo desde la API nodejs"
     });
