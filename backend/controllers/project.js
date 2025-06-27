@@ -1,12 +1,16 @@
 'use strict'
 
 var controller = {
-    home: function(){
-
+    home: function(req, res){
+        return res.status(200).send({
+           message: 'Soy la Home' 
+        });
     },
 
-    test: function(){
-
+    test: function(req, res){
+        return res.status(200).send({
+            message: "Soy el metodo o la accion de test del controlador de project" 
+         });
     }
 };
 
