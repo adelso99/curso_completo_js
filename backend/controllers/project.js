@@ -105,13 +105,13 @@ var controller = {
             var fileSplit = filePath.split('\\');
             var fileName = fileSplit[1];
 
-            Project.findByIdAndUpdate(projectId, {image: fileName}, (err, projectUpdated) => {
+            Project.findByIdAndUpdate(projectId, {image: fileName}, {new: true}, (err, projectUpdated) => {
                if(err) return res.status(200).send({message: 'La Imagen no se ha subido'});
 
                if(!projectUpdated) return res.status(404).send({message: 'El Proyecto no existe y no se guardado la Imagen'});            
 
                 return res.status(200).send({
-                    files: fileName
+                    project: projectUpdated
                });
             });
 
