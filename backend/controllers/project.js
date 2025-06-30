@@ -101,9 +101,16 @@ var controller = {
         var fileName = 'Imagen no subida...';
 
         if(req.files){
+            var filePath = req.files.image.path;
+            var fileSplit = filePath.split('\\');
+            var fileName = fileSplit[1];
 
            return res.status(200).send({
-                files: req.files
+                files: fileName
+           });
+        }else{
+            return res.status(200).send({
+                message: fileName
            });
         }
     }
