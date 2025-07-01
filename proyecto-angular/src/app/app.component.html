@@ -1,10 +1,18 @@
-<h1>Proyecto de Angular</h1>
 
+<header>
 <ul>
   <li><a [routerLink]="['/Sobre-Mi']">Sobre Mi</a></li>
   <li><a [routerLink]="['/Proyectos']">Proyectos</a></li>
+  <li id="logo"><a href="#">VR</a></li>
   <li><a [routerLink]="['/Crear-Proyectos']">Crear Proyectos</a></li>
   <li><a [routerLink]="['/Contacto']">Contacto</a></li>
 </ul>
+</header>
 
+<section id="content">
 <router-outlet></router-outlet>
+</section>
+
+<footer>
+  Master en JavaScript de Adelso Hernandez &copy;
+</footer>
