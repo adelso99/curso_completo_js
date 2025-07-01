@@ -20,15 +20,3 @@ router.post('/upload-image/:id', multipartMiddleware, ProjectController.uploadIm
 
 module.exports = router;
 
-/*
-Progrees    1 
-*/
-
-/*
-Progrees    2
-*/
-
-/*
-Progrees    3 
-*/
-
