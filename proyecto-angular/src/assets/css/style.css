@@ -1,3 +1,5 @@
+
+/*Importar fuentes personalizadas o fuentes custom*/
 @font-face{
     font-family: "yanone";
     src: url("fonts/yanone.ttf");
@@ -9,7 +11,16 @@
 }
 
 
+/*Estilos generales*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
 body{
-    font-family: "yanone", Arial, Helvetica;    
+    font-family: "yanone", Arial, Helvetica;
+    font-size: 20PX;
+    background: url("../img/pattern.png"); 
+    position: fixed;   
 }
