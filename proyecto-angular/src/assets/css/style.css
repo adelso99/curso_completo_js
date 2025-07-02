@@ -79,7 +79,13 @@ header a:hover{
     font-size: 30px;
 }
 
+#logo a{
+    transition: color 500ms, transform 500ms;
+}
+
 #logo a:hover{
     background: transparent;
+    color: black;
+    transform: scale(1.50,1.50);
 
 }
