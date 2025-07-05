@@ -1,9 +1,9 @@
-import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders } from '@angular/common/http'
-import { Observable } from "rxjs/Observable";
-import { Project } from "../models/project";
-import { Global } from "./global";
-import { viewClassName } from "@angular/compiler";
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable } from 'rxjs/Observable';
+import { Project } from '../models/project';
+import { Global } from './global';
+
 
 @Injectable()
 export class ProjectService{
