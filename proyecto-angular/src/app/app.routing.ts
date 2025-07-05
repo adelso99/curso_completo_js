@@ -25,6 +25,4 @@ export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
 /*
 Progress ....1
 */
-/*
-Progress ....2
-*/
+
