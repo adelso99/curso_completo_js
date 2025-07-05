@@ -22,7 +22,3 @@ export const appRoutingProviders: any[] = [];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
 
 
-/*
-Progress ....1
-*/
-
