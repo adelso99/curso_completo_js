@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from '../../models/project';
+import { Project } from 'src/app/models/project';
 import { ProjectService } from 'src/app/services/project.service';
-
 
 @Component({
   selector: 'app-create',
@@ -25,7 +24,7 @@ export class CreateComponent implements OnInit {
   }
 
   onSubmit(form){
-    console
+    console.log(this.project);
   }
 
 }
