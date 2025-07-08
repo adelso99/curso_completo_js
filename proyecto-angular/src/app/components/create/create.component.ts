@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Response } from '@angular/http';
 import { Project } from 'src/app/models/project';
 import { ProjectService } from 'src/app/services/project.service';
 
@@ -25,6 +26,14 @@ export class CreateComponent implements OnInit {
 
   onSubmit(form){
     console.log(this.project);
+    this._projectService.saveProject(this.project).subscribe(
+      response => {
+          console.log(response);
+      }, 
+      error => {
+        console.log(<any>error);
+      }
+    );
   }
 
 }
