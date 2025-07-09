@@ -31,7 +31,7 @@ export class CreateComponent implements OnInit {
       response => {
           if(response.project){
               this.status = 'success';
-              form.reset();
+              form.reset(); tet
           }else{
               this.status = 'failed';
           }   
