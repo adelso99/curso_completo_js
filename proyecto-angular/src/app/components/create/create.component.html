@@ -3,10 +3,10 @@
   <h2>{{title}}</h2>
 
   <div class="message success" *ngIf="status == 'success'">
-    El proyecto se ha creado Correctamente, pudes =><a href="#"> verlo aca <= :) </a>
+    El proyecto se ha creado Correctamente, pudes -><a href="#"> <-verlo aca :) </a>
   </div>
 
-  <div class="message failed" *ngIf="!status == 'failed'">
+  <div class="message failed" *ngIf="status == 'failed'">
       EL PROYECTO NO SE HA PODIDO CREAR :(
   </div>
 

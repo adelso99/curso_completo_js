@@ -31,8 +31,9 @@ export class CreateComponent implements OnInit {
       response => {
           if(response.project){
               this.status = 'success';
-          }else{}
+          }else{
               this.status = 'failed';
+          }   
       }, 
       error => {
         console.log(<any>error);
