@@ -3,6 +3,8 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 
+    const cors = require('cors'); // ✅ Importar cors
+
 var app = express();
 
 //Cargar Archivos de Rutas
@@ -21,6 +23,10 @@ app.use((req, res, next) => {
     res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
     next();
 });
+
+        // ✅ Configuración automática de CORS
+        app.use(cors()); // O puedes personalizar: cors({ origin: 'http://localhost:4200' })
+
 
 
 
