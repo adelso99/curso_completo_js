@@ -1,6 +1,15 @@
 
 <div class="container">
   <h2>{{title}}</h2>
+
+  <div class="message success" *ngIf="status == 'success'">
+    El proyecto se ha creado Correctamente, pudes =><a href="#"> verlo aca <= :) </a>
+  </div>
+
+  <div class="message failed" *ngIf="!status == 'failed'">
+      EL PROYECTO NO SE HA PODIDO CREAR :(
+  </div>
+
   <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
     <p>
       <label for="name">Nombre</label>
