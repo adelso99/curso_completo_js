@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { Response } from '@angular/http';
 import { Project } from 'src/app/models/project';
 import { ProjectService } from 'src/app/services/project.service';
+import { UploadService } from 'src/app/services/upload.service';
 
 @Component({
   selector: 'app-create',
   templateUrl: './create.component.html',
   styleUrls: ['./create.component.css'],
-  providers: [ProjectService]
+  providers: [ProjectService, UploadService]
 })
 export class CreateComponent implements OnInit {
 
@@ -16,7 +16,8 @@ export class CreateComponent implements OnInit {
   public status: string;
 
   constructor(
-      private _projectService: ProjectService
+      private _projectService: ProjectService,
+      private _uploadService: UploadService
   ){
       this.title = "Crear Proyecto";
       this.project = new Project('','','','',2025,'','');
@@ -40,6 +41,10 @@ export class CreateComponent implements OnInit {
         console.log(<any>error);
       }
     );
+  }
+
+  fileChangeEvent(fileInput: any){
+    console.log(fileInput);
   }
 
 }
