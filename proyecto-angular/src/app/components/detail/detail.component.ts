@@ -6,6 +6,7 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 
 
 
+
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
@@ -37,6 +38,19 @@ export class DetailComponent implements OnInit {
       response => {
         this.project = response.project;
       }, 
+      error => {
+        console.log(<any>error);
+      }
+    )
+  }
+
+  deleteProject(id){
+    this._projectService.deleteProject(id).subscribe(
+      response => {
+          if(response.project){
+            this._router.navigate(['/Proyectos']);
+          }
+      },
       error => {
         console.log(<any>error);
       }
