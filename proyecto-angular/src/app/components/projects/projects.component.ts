@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Project } from 'src/app/models/project';
 import { ProjectService } from 'src/app/services/project.service';
 import { Global } from 'src/app/services/global';
-import { error } from 'console';
+
 
 
 @Component({
