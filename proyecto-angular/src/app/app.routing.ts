@@ -6,6 +6,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { CreateComponent } from './components/create/create.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ErrorComponent } from './components/error/error.component';
+import { DetailComponent } from "./components/detail/detail.component";
 
 //Deificion de Rutas
 const appRoutes: Routes = [
@@ -14,7 +15,8 @@ const appRoutes: Routes = [
     {path: 'Proyectos', component: ProjectsComponent},
     {path: 'Crear-Proyecto', component: CreateComponent},
     {path: 'Contacto', component: ContactComponent},
-    {path: '**', component: ErrorComponent},
+    {path: 'proyecto/:id', component: DetailComponent},
+    {path: '**', component: ErrorComponent}
     
 ];
 
