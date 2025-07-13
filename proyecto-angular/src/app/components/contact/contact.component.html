@@ -9,7 +9,10 @@ Tamaño del Slider:
   <div *ngIf="anchuraToSlider">
       <slider [anchura]="anchuraToSlider"
               [etiquetas]="captions"
+              (conseguirAutor)="getAutor($event)"
       ></slider>
   </div>
+
+  
 
 </div>

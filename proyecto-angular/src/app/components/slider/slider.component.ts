@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 declare var $:any;
 
 @Component({
@@ -10,8 +10,17 @@ export class SliderComponent implements OnInit {
   
   @Input() anchura: number;
   @Input('etiquetas') captions: boolean;
+  @Output() conseguirAutor = new EventEmitter();
 
-  constructor() { }
+  public autor: any;
+
+  constructor() {
+    this.autor = {
+       nombre: "Adelso Hernandez",
+       web: "github.com/adelso99",
+       youtube: "A99Gamer"
+    };
+   }
 
   ngOnInit() {
     $("#logo").click(function(e){
@@ -26,6 +35,10 @@ export class SliderComponent implements OnInit {
           captions: this.captions,
           slideWidth: this.anchura
         });
+  }
+
+  lanzar(event){
+      this.conseguirAutor.emit(this.autor);
   }
 
 }
