@@ -7,11 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  public widthSlider: number;
+  public anchuraToSlider: number;
+  public captions: boolean;
 
-  constructor() { }
+  constructor() { 
+    this.captions = true;
+  }
 
   ngOnInit() {
 
+  }
+  cargarSlider(){
+        this.anchuraToSlider = this.widthSlider;
+  }
+
+  resetearSlider(){
+       this.anchuraToSlider = false;
   }
 
 }

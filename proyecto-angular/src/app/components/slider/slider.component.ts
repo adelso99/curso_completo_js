@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 declare var $:any;
 
 @Component({
@@ -7,6 +7,9 @@ declare var $:any;
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent implements OnInit {
+  
+  @Input() anchura: number;
+  @Input('etiquetas') captions: boolean;
 
   constructor() { }
 
@@ -20,8 +23,8 @@ export class SliderComponent implements OnInit {
 
     $('.galeria').bxSlider({
           mode: 'fade',
-          captions: false,
-          slideWidth: 600
+          captions: this.captions,
+          slideWidth: this.anchura
         });
   }
 
