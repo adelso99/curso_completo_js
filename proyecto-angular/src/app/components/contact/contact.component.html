@@ -6,13 +6,13 @@ Tamaño del Slider:
 <button (click)="cargarSlider()">Cargar Slider</button>
 <button (click)="resetearSlider()">Resetear Slider</button>
 
-  <div *ngIf="anchuraToSlider">
+  <div>
       <slider [anchura]="anchuraToSlider"
               [etiquetas]="captions"
               (conseguirAutor)="getAutor($event)"
       ></slider>
   </div>
 
-  
+  {{autor.nombre+ " "+autor.web}}
 
 </div>

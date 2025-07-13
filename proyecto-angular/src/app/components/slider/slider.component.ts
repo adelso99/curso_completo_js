@@ -35,6 +35,9 @@ export class SliderComponent implements OnInit {
           captions: this.captions,
           slideWidth: this.anchura
         });
+
+        //Lanzar el Evento
+        this.conseguirAutor.emit(this.autor);
   }
 
   lanzar(event){

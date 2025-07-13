@@ -28,7 +28,7 @@ export class ContactComponent implements OnInit {
   }
 
   getAutor(event){
-    this.autor(event);
+    this.autor = event;
   }
 
 }
