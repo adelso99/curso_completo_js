@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -11,6 +11,7 @@ export class ContactComponent implements OnInit {
   public anchuraToSlider: any;
   public captions: boolean;
   public autor: any;
+  @ViewChild('textos') textos;
 
   constructor() { 
     this.captions = true;
@@ -18,7 +19,7 @@ export class ContactComponent implements OnInit {
 
   ngOnInit() {
     var opcion_clasica = document.querySelector('#texto').innerHTML;
-    alert();
+    console.log(this.textos);
   }
   cargarSlider(){
         this.anchuraToSlider = this.widthSlider;
