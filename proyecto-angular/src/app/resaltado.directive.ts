@@ -15,6 +15,8 @@ export class ResaltadoDirective {
         element.style.padding = "20px";
         element.style.marginTop = "15px";
         element.style.color = "white";
+
+        element.innerText = element.innerText.toUpperCase().replace("CONTACTO", "Holi");
    }
 
 }
