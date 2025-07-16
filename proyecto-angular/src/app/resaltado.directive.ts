@@ -22,7 +22,19 @@ export class ResaltadoDirective {
 }
 
 /*
-Progreso ...1
+Progreso .........1
+*/
+
+
+
+/*
+Progreso .........2
+*/
+
+
+
+/*
+Progreso ..........3
 */
 
 
