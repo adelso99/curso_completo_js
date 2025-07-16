@@ -29,10 +29,6 @@ Progreso ...1
 Progreso ...2
 */
 
-/*
-Progreso ...3
-*/
-
 
 
 
