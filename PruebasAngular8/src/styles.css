@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+div h1{
+    background: blue;
+    color: white;
+}
+
+h2{
+    color: yellow;
+}
