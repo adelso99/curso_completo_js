@@ -4,8 +4,16 @@
   "description": "Proyecto de chat con node v socket.io",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Adelso Hernandez",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0",
+    "socket.io": "^1.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
