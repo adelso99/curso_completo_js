@@ -29,3 +29,7 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span').textContent).toContain('PruebasAngular11 app is running!');
   });
 });
+
+/*
+Progress ...1
+*/
