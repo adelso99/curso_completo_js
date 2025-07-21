@@ -30,7 +30,3 @@ describe('AppComponent', () => {
   });
 });
 
-/*
-Progress ...1
-*/
-
