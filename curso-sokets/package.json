@@ -1,0 +1,11 @@
+{
+  "name": "curso-sokets",
+  "version": "1.0.0",
+  "description": "Proyecto de chat con node v socket.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adelso Hernandez",
+  "license": "MIT"
+}
