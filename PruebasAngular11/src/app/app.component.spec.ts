@@ -46,6 +46,3 @@ Progress ...3
 Progress ...4
 */
 
-/*
-Progress ...5
-*/
