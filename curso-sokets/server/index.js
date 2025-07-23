@@ -4,8 +4,17 @@ var app = express();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
+//Peticion para cargar una vista estitica por default
+app.use(express.static('client'));
+
+//Peticion de get
 app.get('/hola-mundo', function(req, res){
     res.status(200).send('Hola mundo desde una ruta');
+
+});
+
+io.on('connection', function(socket){
+    console.log("Se ha Conectado una persona con la IP: "+socket.handshake.address+"se ha conectado...");
 
 });
 
