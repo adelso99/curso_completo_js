@@ -13,8 +13,16 @@ app.get('/hola-mundo', function(req, res){
 
 });
 
+var messages = [{
+    id: 1,
+    text: 'Bievnedio al chat privado de Socket.io y NodeJS de Adelso Hernandez',
+    nickname: 'Bot - https://github.com/adelso99'
+}];
+
 io.on('connection', function(socket){
     console.log("Se ha Conectado una persona con la IP: "+socket.handshake.address+"se ha conectado...");
+
+    socket.emit('messages', messages);
 
 });
 
