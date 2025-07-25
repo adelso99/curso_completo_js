@@ -18,3 +18,10 @@ function render(data){
     document.getElementById('messages').innerHTML = html;
 
 }
+
+function addMessage(e){
+    var message = {
+        nickname: document.getElementById('nickname').Value,
+        text: document.getElementById('text').value 
+    };
+}
