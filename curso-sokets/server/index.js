@@ -24,6 +24,12 @@ io.on('connection', function(socket){
 
     socket.emit('messages', messages);
 
+    socket.on('add-message', function(data){
+            messages.push(data);
+
+            io.sockets.emit('messages', messages);
+    });
+
 });
 
 //creacion del Servidor con exprees
