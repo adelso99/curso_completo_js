@@ -52,4 +52,10 @@ carro2.setColor("VERDE");
 console.log("El color del Carro es de "+carro.getColor());
 console.log("El color del Carro es de "+carro1.getColor());
 console.log("El color del Carro es de "+carro2.getColor());
-*/ 
+*/
+/*
+Progrees ....1
+*/
+/*
+Progrees ....2
+*/

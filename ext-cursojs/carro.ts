@@ -1,4 +1,9 @@
-class Carro{
+interface CarroBase{
+    getModelo():string;
+    getVelocidad():number;
+}
+
+class Carro implements CarroBase{
     public color: string;
     public modelo: string;
     public velocidad: number;
@@ -13,7 +18,7 @@ class Carro{
         }
     }
 
-    public getModelo(){
+    public getModelo():string{
         return this.modelo;
 
     }
