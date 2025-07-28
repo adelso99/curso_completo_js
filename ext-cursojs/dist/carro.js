@@ -1,4 +1,3 @@
-"use strict";
 var Carro = /** @class */ (function () {
     function Carro(modelo) {
         if (modelo === void 0) { modelo = null; }

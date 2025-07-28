@@ -1,4 +1,3 @@
-"use strict";
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -52,3 +51,6 @@ editor.setNombre("Hola estudio");
 editor.setVersion(8);
 editor.setTimeline(4000);
 console.log(editor.getAllData());
+/*
+Progrees .....1
+*/

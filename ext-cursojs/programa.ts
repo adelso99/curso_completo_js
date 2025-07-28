@@ -1,6 +1,6 @@
 class Programa{
-    public nombre!: string;
-    public version!: number;
+    public nombre: string;
+    public version: number;
 
     
     getNombre(){
@@ -22,7 +22,7 @@ class Programa{
 }
 
 class EditorVideo extends Programa{
-    public timeline!:number;
+    public timeline:number;
 
     setTimeline(timeline:number){
         this.timeline = timeline;
