@@ -58,6 +58,4 @@ console.log("El color del Carro es de "+carro2.getColor());
 /*
 Progrees ....1
 */
-/*
-Progrees ....2
-*/
+
